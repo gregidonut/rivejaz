@@ -1,17 +1,26 @@
 ---
-import Content from "./Content.md";
+import ContentMar2 from "./content/ContentMar2.md";
+import ContentMar3 from "./content/ContentMar3.md";
+import WallCard from "./WallCard/WallCard.astro";
 import styles from "./homepage.module.css";
 ---
 
-<article class={styles.article}>
-    <Content />
+<section class={styles.wall}>
+    <WallCard date={new Date("March 3, 2025")}>
+        <ContentMar3 />
+    </WallCard>
+    <WallCard date={new Date("March 2, 2025")}>
+        <ContentMar2 />
 
-    <section class={styles.sheetWrapper}>
-        <iframe
-            id="google-sheet"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6nScgXDYPQ-OyZBRQfchazBv1AiI3A78MH4cac5koBa7kd_EZt7lP43FI5-9EqbSEMrHi7SKkLVz2/pubhtml?gid=0&single=true&widget=true&headers=false"
-            height="250"
-            width="400"
-            frameborder="0"></iframe>
-    </section>
-</article>
+        <section class={styles.sheetsWrapper}>
+            <iframe
+                id="google-sheet"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6nScgXDYPQ-OyZBRQfchazBv1AiI3A78MH4cac5koBa7kd_EZt7lP43FI5-9EqbSEMrHi7SKkLVz2/pubhtml?gid=0&single=true&widget=true&headers=false"
+                height="250"
+                width="400"
+                frameborder="0"
+            >
+            </iframe>
+        </section>
+    </WallCard>
+</section>

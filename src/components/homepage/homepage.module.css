@@ -1,6 +1,17 @@
-.article section {
+.sheetsWrapper {
     width: 100%;
-    display: grid;
-    place-content: center;
-    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wall {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
 }

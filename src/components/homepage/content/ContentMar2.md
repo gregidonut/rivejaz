@@ -1,4 +1,3 @@
-
 ### ganto
 
 so yung mismong software na gagamitin mo is called `Rive`
@@ -16,5 +15,4 @@ so yung mismong software na gagamitin mo is called `Rive`
 
 [1]: https://editor.rive.app
 [2]: https://www.youtube.com/watch?v=UNPgrK-qtsA&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=1
-[3]: https://docs.google.com/spreadsheets/d/1EhGCZFgoc8rksFOnO_DtcFLN34Fulelds-OTCs2IPt0/edit?usp=drive_link 
-
+[3]: https://docs.google.com/spreadsheets/d/1EhGCZFgoc8rksFOnO_DtcFLN34Fulelds-OTCs2IPt0/edit?usp=drive_link

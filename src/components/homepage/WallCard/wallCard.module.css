@@ -1,0 +1,12 @@
+.wallCard {
+    border: dashed #ffb86c 0.2rem;
+    padding: 2rem;
+
+    width: 100%;
+}
+
+.wallCard time {
+    background: #bd93f9;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
