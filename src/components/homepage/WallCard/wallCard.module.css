@@ -10,3 +10,12 @@
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
 }
+
+.wallCard section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

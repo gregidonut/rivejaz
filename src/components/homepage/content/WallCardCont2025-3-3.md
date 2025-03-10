@@ -1,3 +1,7 @@
+---
+date: 2025-03-03
+---
+
 ### suggestions from discord
 
 1. [ 11min video ][1]

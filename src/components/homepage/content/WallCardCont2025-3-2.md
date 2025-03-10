@@ -1,3 +1,7 @@
+---
+date: 2025-03-02
+---
+
 ### ganto
 
 so yung mismong software na gagamitin mo is called `Rive`
@@ -13,6 +17,19 @@ so yung mismong software na gagamitin mo is called `Rive`
    plano ko kasi sabayan kita manood nung mga video, para may
    context ako sa mga tanong mo
 
+
+<section>
+    <iframe
+        id="google-sheet"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6nScgXDYPQ-OyZBRQfchazBv1AiI3A78MH4cac5koBa7kd_EZt7lP43FI5-9EqbSEMrHi7SKkLVz2/pubhtml?gid=0&single=true&widget=true&headers=false"
+        height="250"
+        width="400"
+        frameborder="0"
+    >
+    </iframe>
+</section>
+
 [1]: https://editor.rive.app
 [2]: https://www.youtube.com/watch?v=UNPgrK-qtsA&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=1
 [3]: https://docs.google.com/spreadsheets/d/1EhGCZFgoc8rksFOnO_DtcFLN34Fulelds-OTCs2IPt0/edit?usp=drive_link
+

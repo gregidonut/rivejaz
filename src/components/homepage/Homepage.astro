@@ -1,26 +1,23 @@
 ---
-import ContentMar2 from "./content/ContentMar2.md";
-import ContentMar3 from "./content/ContentMar3.md";
 import WallCard from "./WallCard/WallCard.astro";
 import styles from "./homepage.module.css";
+import type { JSX } from "astro/jsx-runtime";
+import { getCollection } from "astro:content";
+
+const wallCardCont = await getCollection("wallCardCont");
+wallCardCont.sort(function (a, b): number {
+    return b.data.date.getTime() - a.data.date.getTime();
+});
 ---
 
 <section class={styles.wall}>
-    <WallCard date={new Date("March 3, 2025")}>
-        <ContentMar3 />
-    </WallCard>
-    <WallCard date={new Date("March 2, 2025")}>
-        <ContentMar2 />
-
-        <section class={styles.sheetsWrapper}>
-            <iframe
-                id="google-sheet"
-                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6nScgXDYPQ-OyZBRQfchazBv1AiI3A78MH4cac5koBa7kd_EZt7lP43FI5-9EqbSEMrHi7SKkLVz2/pubhtml?gid=0&single=true&widget=true&headers=false"
-                height="250"
-                width="400"
-                frameborder="0"
-            >
-            </iframe>
-        </section>
-    </WallCard>
+    {
+        wallCardCont.map(function (c): JSX.Element {
+            return (
+                <WallCard date={c.data.date}>
+                    <Fragment set:html={c.rendered!.html} />
+                </WallCard>
+            );
+        })
+    }
 </section>
